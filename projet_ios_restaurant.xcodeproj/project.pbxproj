@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		442DA59525C7E8B000567DAD /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DA59425C7E8B000567DAD /* OrdersViewController.swift */; };
+		442DA59F25C7F3D000567DAD /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DA59E25C7F3D000567DAD /* OrderTableViewCell.swift */; };
 		443B59A025BEC0AE00533942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B599F25BEC0AE00533942 /* AppDelegate.swift */; };
 		443B59A225BEC0AE00533942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B59A125BEC0AE00533942 /* SceneDelegate.swift */; };
 		443B59A425BEC0AE00533942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B59A325BEC0AE00533942 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		442DA59425C7E8B000567DAD /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		442DA59E25C7F3D000567DAD /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		443B599C25BEC0AE00533942 /* projet_ios_restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projet_ios_restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B599F25BEC0AE00533942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443B59A125BEC0AE00533942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				443B59AD25BEC0B000533942 /* Info.plist */,
 				E286FB7125BED3BB00AD61A2 /* Dish.swift */,
 				442DA59425C7E8B000567DAD /* OrdersViewController.swift */,
+				442DA59E25C7F3D000567DAD /* OrderTableViewCell.swift */,
 			);
 			path = projet_ios_restaurant;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442DA59F25C7F3D000567DAD /* OrderTableViewCell.swift in Sources */,
 				443B59A425BEC0AE00533942 /* ViewController.swift in Sources */,
 				E286FB7225BED3BB00AD61A2 /* Dish.swift in Sources */,
 				443B59A025BEC0AE00533942 /* AppDelegate.swift in Sources */,
