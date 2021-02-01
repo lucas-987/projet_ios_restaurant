@@ -13,6 +13,7 @@
 		443B59A725BEC0AE00533942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B59A525BEC0AE00533942 /* Main.storyboard */; };
 		443B59A925BEC0B000533942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B59A825BEC0B000533942 /* Assets.xcassets */; };
 		443B59AC25BEC0B000533942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B59AA25BEC0B000533942 /* LaunchScreen.storyboard */; };
+		58F3503E25C7E499003C89A2 /* profilObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F3503D25C7E499003C89A2 /* profilObj.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		443B59A825BEC0B000533942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443B59AB25BEC0B000533942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B59AD25BEC0B000533942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F3503D25C7E499003C89A2 /* profilObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilObj.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,8 @@
 		443B599E25BEC0AE00533942 /* projet_ios_restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				58F3504125C7E4CA003C89A2 /* views */,
+				58F3504025C7E4BB003C89A2 /* Object */,
 				443B599F25BEC0AE00533942 /* AppDelegate.swift */,
 				443B59A125BEC0AE00533942 /* SceneDelegate.swift */,
 				443B59A325BEC0AE00533942 /* ViewController.swift */,
@@ -63,8 +67,23 @@
 				443B59A825BEC0B000533942 /* Assets.xcassets */,
 				443B59AA25BEC0B000533942 /* LaunchScreen.storyboard */,
 				443B59AD25BEC0B000533942 /* Info.plist */,
+				58F3503D25C7E499003C89A2 /* profilObj.swift */,
 			);
 			path = projet_ios_restaurant;
+			sourceTree = "<group>";
+		};
+		58F3504025C7E4BB003C89A2 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		58F3504125C7E4CA003C89A2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443B59A425BEC0AE00533942 /* ViewController.swift in Sources */,
+				58F3503E25C7E499003C89A2 /* profilObj.swift in Sources */,
 				443B59A025BEC0AE00533942 /* AppDelegate.swift in Sources */,
 				443B59A225BEC0AE00533942 /* SceneDelegate.swift in Sources */,
 			);
