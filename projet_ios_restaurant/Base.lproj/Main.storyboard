@@ -37,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXG-LN-iaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838" y="-563"/>
+            <point key="canvasLocation" x="1838" y="-569"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jPO-W9-PPx">
@@ -61,7 +61,8 @@
         <!--Commandes-->
         <scene sceneID="8Ko-XQ-51c">
             <objects>
-                <viewController id="aLm-IB-dIn" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzs-Pk-DAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="aLm-IB-dIn" customClass="OrdersViewController" customModule="projet_ios_restaurant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nRk-5v-Y0V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,9 +71,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Commandes" image="bag" catalog="system" selectedImage="bag" id="8Q1-lL-WBs"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xzs-Pk-DAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816" y="824"/>
+            <point key="canvasLocation" x="1838" y="834"/>
         </scene>
         <!--Accueil-->
         <scene sceneID="uui-Xy-1cs">
