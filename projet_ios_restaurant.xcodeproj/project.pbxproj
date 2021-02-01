@@ -15,7 +15,6 @@
 		443B59A925BEC0B000533942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B59A825BEC0B000533942 /* Assets.xcassets */; };
 		443B59AC25BEC0B000533942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B59AA25BEC0B000533942 /* LaunchScreen.storyboard */; };
 		E286FB7225BED3BB00AD61A2 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286FB7125BED3BB00AD61A2 /* Dish.swift */; };
-		E286FB7525BED7F000AD61A2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286FB7425BED7F000AD61A2 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		443B59AB25BEC0B000533942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B59AD25BEC0B000533942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E286FB7125BED3BB00AD61A2 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
-		E286FB7425BED7F000AD61A2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +143,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E286FB7525BED7F000AD61A2 /* HomeViewController.swift in Sources */,
 				443B59A425BEC0AE00533942 /* ViewController.swift in Sources */,
 				E286FB7225BED3BB00AD61A2 /* Dish.swift in Sources */,
 				443B59A025BEC0AE00533942 /* AppDelegate.swift in Sources */,
