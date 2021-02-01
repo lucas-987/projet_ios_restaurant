@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442DA59525C7E8B000567DAD /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DA59425C7E8B000567DAD /* OrdersViewController.swift */; };
 		443B59A025BEC0AE00533942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B599F25BEC0AE00533942 /* AppDelegate.swift */; };
 		443B59A225BEC0AE00533942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B59A125BEC0AE00533942 /* SceneDelegate.swift */; };
 		443B59A425BEC0AE00533942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B59A325BEC0AE00533942 /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		443B59A925BEC0B000533942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B59A825BEC0B000533942 /* Assets.xcassets */; };
 		443B59AC25BEC0B000533942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B59AA25BEC0B000533942 /* LaunchScreen.storyboard */; };
 		58F3503E25C7E499003C89A2 /* profilObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F3503D25C7E499003C89A2 /* profilObj.swift */; };
+		E286FB7225BED3BB00AD61A2 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286FB7125BED3BB00AD61A2 /* Dish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		442DA59425C7E8B000567DAD /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		443B599C25BEC0AE00533942 /* projet_ios_restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projet_ios_restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B599F25BEC0AE00533942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443B59A125BEC0AE00533942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		443B59AB25BEC0B000533942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B59AD25BEC0B000533942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58F3503D25C7E499003C89A2 /* profilObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilObj.swift; sourceTree = "<group>"; };
+		E286FB7125BED3BB00AD61A2 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				443B59AA25BEC0B000533942 /* LaunchScreen.storyboard */,
 				443B59AD25BEC0B000533942 /* Info.plist */,
 				58F3503D25C7E499003C89A2 /* profilObj.swift */,
+				E286FB7125BED3BB00AD61A2 /* Dish.swift */,
+				442DA59425C7E8B000567DAD /* OrdersViewController.swift */,
 			);
 			path = projet_ios_restaurant;
 			sourceTree = "<group>";
@@ -158,8 +164,10 @@
 			files = (
 				443B59A425BEC0AE00533942 /* ViewController.swift in Sources */,
 				58F3503E25C7E499003C89A2 /* profilObj.swift in Sources */,
+				E286FB7225BED3BB00AD61A2 /* Dish.swift in Sources */,
 				443B59A025BEC0AE00533942 /* AppDelegate.swift in Sources */,
 				443B59A225BEC0AE00533942 /* SceneDelegate.swift in Sources */,
+				442DA59525C7E8B000567DAD /* OrdersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
