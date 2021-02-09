@@ -15,7 +15,10 @@
 		443B59A925BEC0B000533942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B59A825BEC0B000533942 /* Assets.xcassets */; };
 		443B59AC25BEC0B000533942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B59AA25BEC0B000533942 /* LaunchScreen.storyboard */; };
 		58F3503E25C7E499003C89A2 /* profilObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F3503D25C7E499003C89A2 /* profilObj.swift */; };
+		E226927925C7F94900E1568B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226927825C7F94900E1568B /* HomeViewController.swift */; };
+		E226928025C7FE9D00E1568B /* HomeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226927F25C7FE9D00E1568B /* HomeDishCell.swift */; };
 		E286FB7225BED3BB00AD61A2 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286FB7125BED3BB00AD61A2 /* Dish.swift */; };
+		E2F8481325CAF6E7001FBCA8 /* HomeDishDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8481225CAF6E7001FBCA8 /* HomeDishDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +32,10 @@
 		443B59AB25BEC0B000533942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B59AD25BEC0B000533942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58F3503D25C7E499003C89A2 /* profilObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilObj.swift; sourceTree = "<group>"; };
+		E226927825C7F94900E1568B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E226927F25C7FE9D00E1568B /* HomeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDishCell.swift; sourceTree = "<group>"; };
 		E286FB7125BED3BB00AD61A2 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		E2F8481225CAF6E7001FBCA8 /* HomeDishDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDishDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 				443B59A125BEC0AE00533942 /* SceneDelegate.swift */,
 				443B59A325BEC0AE00533942 /* ViewController.swift */,
 				443B59A525BEC0AE00533942 /* Main.storyboard */,
+				E226927825C7F94900E1568B /* HomeViewController.swift */,
+				E226927F25C7FE9D00E1568B /* HomeDishCell.swift */,
+				E2F8481225CAF6E7001FBCA8 /* HomeDishDetailsVC.swift */,
 				443B59A825BEC0B000533942 /* Assets.xcassets */,
 				443B59AA25BEC0B000533942 /* LaunchScreen.storyboard */,
 				443B59AD25BEC0B000533942 /* Info.plist */,
@@ -166,7 +175,10 @@
 				58F3503E25C7E499003C89A2 /* profilObj.swift in Sources */,
 				E286FB7225BED3BB00AD61A2 /* Dish.swift in Sources */,
 				443B59A025BEC0AE00533942 /* AppDelegate.swift in Sources */,
+				E2F8481325CAF6E7001FBCA8 /* HomeDishDetailsVC.swift in Sources */,
 				443B59A225BEC0AE00533942 /* SceneDelegate.swift in Sources */,
+				E226927925C7F94900E1568B /* HomeViewController.swift in Sources */,
+				E226928025C7FE9D00E1568B /* HomeDishCell.swift in Sources */,
 				442DA59525C7E8B000567DAD /* OrdersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
