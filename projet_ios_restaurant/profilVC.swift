@@ -17,15 +17,29 @@ class profilVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let monUser = users{
-            UserFName.text = monUser.firstName
-            UserLName.text = monUser.lastName
+        //getUser(userId: "ID") // TODO mettre un id valid
+        
+    }
+    
+    func getUser(userId: String){
+        NetworkManager.shared.getUser(for: userId) { result in
+            switch result {
+            case .success(let users):
+                //remplir ma table view avec le tableau followr que la fonction getusers(celle dans networkmANAGER) nous retourne
+                self.users = users
+                DispatchQueue.main.async {
+                    //self.tableView.reloadData()
+                }
+                
+            case .failure(let error):
+                let alert = GFAlert(title: "Oups", message: error.rawValue)
+                DispatchQueue.main.async {
+                    alert.showAlert(on: self)
+                }
+            }
             
         }
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        users?.firstName = UserFName.text!
-        users?.lastName = UserLName.text!
-    }
 }
+
+
