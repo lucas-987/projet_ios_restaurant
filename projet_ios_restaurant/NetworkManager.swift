@@ -15,10 +15,7 @@ class NetworkManager {
      
     
        
-    private init(){
-        
-        
-    }
+    private init(){}
     
     func getUser(for userId: String, completed: @escaping (Result<ProfilObj, GFError>) -> Void) {
         
@@ -63,7 +60,7 @@ class NetworkManager {
     }
     
     func getDishes(completed: @escaping (Result<[Dish], GFError>) -> Void) {
-        let endpoint = baseURL + "/dish"
+        let endpoint = baseURL + "/dish/all"
         
         guard let url = URL(string: endpoint) else{
            

@@ -12,7 +12,7 @@ class HomeDishDetailsVC: UIViewController {
     var dish: Dish
     
     var navigationBar = UINavigationBar()
-    var imageView = UIImageView()
+    var imageView = DishThumbnailImageView(frame: .zero)
     var titleLabel = UILabel()
     var descriptionLabel = UILabel()
     var nutritionLabel = UILabel()
@@ -34,6 +34,7 @@ class HomeDishDetailsVC: UIViewController {
         view.addSubview(orderButton)
         view.addSubview(descriptionLabel)
         view.addSubview(nutritionLabel)
+        view.addSubview(imageView)
         
         configureVC()
         configureTitle()
@@ -48,7 +49,9 @@ class HomeDishDetailsVC: UIViewController {
     }
     
     func configureImageView() {
-        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.centerYAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -150).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
     func configureTitle() {
@@ -103,6 +106,7 @@ class HomeDishDetailsVC: UIViewController {
     
     @objc func orderButtonClicked(_ sender: UIButton) {
         // TODO store order into orderlist singleton
+        OrdersManager.shared.addOrderedDish(dish: self.dish)
         navigationController?.popViewController(animated: true)
     }
 
