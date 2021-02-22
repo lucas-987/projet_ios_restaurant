@@ -30,8 +30,8 @@ class HomeDishCell: UITableViewCell {
     
     func set(dish: Dish) {
         titleLabel.text = dish.name
-        priceLabel.text = String(format: "%.2f", dish.price)
-        thumbnail.downloadImage(from: dish.imageUrl)
+        priceLabel.text = dish.price
+        thumbnail.downloadImage(from: dish.imageURL)
     }
     
     func configureTitleLabel() {

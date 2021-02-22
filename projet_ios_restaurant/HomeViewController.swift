@@ -50,10 +50,9 @@ class HomeViewController: UIViewController, UITableViewDelegate {
             Dish(id: 5, name: "dish 5", description: "dont know", price: 7.5, calories: 500, proteins: "prot", carbs: "carbs", imageUrl: ""),
         ]*/
         
-        NetworkManager.shared.getDishes(completed: ) { result in
+        NetworkManager.shared.getDishes() { result in
             switch result {
             case .success(let dishes):
-                //remplir ma table view avec le tableau followr que la fonction getusers(celle dans networkmANAGER) nous retourne
                 self.dishes = dishes
                 DispatchQueue.main.async {
                     self.tableView.reloadData()

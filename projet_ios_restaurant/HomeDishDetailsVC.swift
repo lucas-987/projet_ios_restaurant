@@ -49,9 +49,17 @@ class HomeDishDetailsVC: UIViewController {
     }
     
     func configureImageView() {
+        imageView.downloadImage(from: dish.imageURL)
+        imageView.contentMode = .scaleAspectFit
+        
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.centerYAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -150).isActive = true
         imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        
+        //imageView.heightAnchor.constraint(equalToConstant: imageView.frame.width / ratio).isActive = true
+        
     }
     
     func configureTitle() {
