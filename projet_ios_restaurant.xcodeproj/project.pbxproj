@@ -15,6 +15,7 @@
 		443B59A925BEC0B000533942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B59A825BEC0B000533942 /* Assets.xcassets */; };
 		443B59AC25BEC0B000533942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B59AA25BEC0B000533942 /* LaunchScreen.storyboard */; };
 		44BC50EE25E39364005F336D /* OrdersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BC50ED25E39364005F336D /* OrdersManager.swift */; };
+		44BC510825E39875005F336D /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BC510725E39875005F336D /* OrderTableViewCell.swift */; };
 		5893011225D14BB8002E5A95 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5893011125D14BB8002E5A95 /* NetworkManager.swift */; };
 		5893011525D14CB6002E5A95 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5893011425D14CB6002E5A95 /* GFError.swift */; };
 		58EF1BB525D564410032E4F2 /* GFAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF1BB425D564410032E4F2 /* GFAlert.swift */; };
@@ -38,6 +39,7 @@
 		443B59AB25BEC0B000533942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B59AD25BEC0B000533942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44BC50ED25E39364005F336D /* OrdersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersManager.swift; sourceTree = "<group>"; };
+		44BC510725E39875005F336D /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		5893011125D14BB8002E5A95 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5893011425D14CB6002E5A95 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		58EF1BB425D564410032E4F2 /* GFAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlert.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				58F3504825C7F894003C89A2 /* profilVC.swift */,
 				E28ABFAC25E38F6800C90C1A /* DishThumbnailImageView.swift */,
 				44BC50ED25E39364005F336D /* OrdersManager.swift */,
+				44BC510725E39875005F336D /* OrderTableViewCell.swift */,
 			);
 			path = projet_ios_restaurant;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				443B59A425BEC0AE00533942 /* ViewController.swift in Sources */,
 				58F3504925C7F894003C89A2 /* profilVC.swift in Sources */,
+				44BC510825E39875005F336D /* OrderTableViewCell.swift in Sources */,
 				5893011525D14CB6002E5A95 /* GFError.swift in Sources */,
 				58F3503E25C7E499003C89A2 /* profilObj.swift in Sources */,
 				E286FB7225BED3BB00AD61A2 /* Dish.swift in Sources */,
