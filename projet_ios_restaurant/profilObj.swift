@@ -8,12 +8,16 @@
 import Foundation
 
 
-struct User: Codable{
+
+struct ProfilObj: Codable {
     //le struct permet de creer directement un constructeur contrairement a une classe
-    var firstName: String
+    var id: String
+    var firstName:String
     var lastName: String
     var email: String
-    var birth: Date
+    var dateOfBirth: Date
+    var  extraNapkins: Bool
+    var frequentRefill: Bool
     
     
 }
