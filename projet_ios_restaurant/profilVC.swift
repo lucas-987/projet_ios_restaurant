@@ -8,7 +8,8 @@
 import UIKit
 class profilVC: UIViewController {
     
-    var users : ProfilObj?
+    var user : ProfilObj?
+    
     
     @IBOutlet weak var UserFName: UITextField!
     @IBOutlet weak var UserLName: UITextField!
@@ -18,18 +19,37 @@ class profilVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //getUser(userId: "ID") // TODO mettre un id valid
+        getUser(userId: "2") // TODO mettre un id valid
         
     }
+    
+    @IBAction func firstNameChanged(_ sender: UITextField) {
+        
+    }
+    
+    @IBAction func lastNameChanged(_ sender: UITextField) {
+    }
+    
+    @IBAction func emailChanged(_ sender: UITextField) {
+    }
+    
+    
     
     func getUser(userId: String){
         NetworkManager.shared.getUser(for: userId) { result in
             switch result {
-            case .success(let users):
-                //remplir ma table view avec le tableau followr que la fonction getusers(celle dans networkmANAGER) nous retourne
-                self.users = users
+            case .success(let user):
+                //remplir ma table view avec le tableau  que la fonction getuser(celle dans networkmANAGER) nous retourne
+                
                 DispatchQueue.main.async {
-                    //self.tableView.reloadData()
+                    self.user = user
+                    self.UserFName.text = user.firstName
+                    self.UserLName.text = user.lastName
+                    self.UserEmail.text = user.email
+                    
+                    //let dateFormatter = DateFormatter()
+                    
+                    //self.UserBirthDate.date = dateFormatter.date(from: user.dateOfBirth)!
                 }
                 
             case .failure(let error):
@@ -41,19 +61,29 @@ class profilVC: UIViewController {
             
         }
     }
-    
-    
+   
     @IBAction func buttonSaveClicked(_ sender: UIButton) {
         
-        let lastName = UserLName.text
-        let firstName = UserFName.text
-        let email = UserEmail.text
+        let lastName = UserLName.text!
+        let firstName = UserFName.text!
+        let email = UserEmail.text!
         
         let dateFormatter = DateFormatter()
         let birthDate = dateFormatter.string(from: UserBirthDate.date)
         
-        // TODO utiliser ces données pour faire la requête en post
-        
+        //  TODO utiliser ces données pour faire la requête en post
+        NetworkManager.shared.modifyuser(userId: String(user!.id), lastName: lastName, firstname: firstName, email: email, birthDate: birthDate) { result in
+            switch result {
+            case .success(let user):
+                print("ok")
+            case .failure(let error):
+                let alert = GFAlert(title: "Oups", message: error.rawValue)
+                DispatchQueue.main.async {
+                    alert.showAlert(on: self)
+                }
+            }
+            
+        }
     }
 }
 

@@ -11,7 +11,7 @@ class HomeDishCell: UITableViewCell {
     
     var titleLabel = UILabel()
     var priceLabel = UILabel()
-    var thumbnail = UIImageView()
+    var thumbnail = DishThumbnailImageView(frame: .zero)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -30,8 +30,8 @@ class HomeDishCell: UITableViewCell {
     
     func set(dish: Dish) {
         titleLabel.text = dish.name
-        priceLabel.text = String(format: "%.2f", dish.price)
-        thumbnail.image = UIImage(named: dish.imageUrl)
+        priceLabel.text = dish.price
+        thumbnail.downloadImage(from: dish.imageURL)
     }
     
     func configureTitleLabel() {

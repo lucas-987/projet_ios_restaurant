@@ -11,9 +11,9 @@ struct Dish : Decodable {
     var id: Int
     var name: String
     var description: String
-    var price: Double
-    var calories: Int
+    var price: String
+    var calories: String
     var proteins: String
     var carbs: String
-    var imageUrl: String
+    var imageURL: String
 }

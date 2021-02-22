@@ -11,14 +11,12 @@ import Foundation
 
 struct ProfilObj: Codable {
     //le struct permet de creer directement un constructeur contrairement a une classe
-    var id: String
+    var id: Int
     var firstName:String
     var lastName: String
     var email: String
-    var dateOfBirth: Date
-    var  extraNapkins: Bool
-    var frequentRefill: Bool
-    
-    
+    var dateOfBirth: String
+    var extraNapkins: String
+    var frequentRefill: String
 }
 
