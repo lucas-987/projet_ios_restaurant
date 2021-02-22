@@ -44,18 +44,27 @@
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="firstNameChanged:" destination="f4l-lH-Fd6" eventType="editingChanged" id="C3o-ip-LZ1"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTR-12-GQK">
                                 <rect key="frame" x="20" y="220" width="374" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="lastNameChanged:" destination="f4l-lH-Fd6" eventType="editingChanged" id="P8k-Gd-RD5"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-tL-9Iw">
                                 <rect key="frame" x="20" y="262" width="374" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailChanged:" destination="f4l-lH-Fd6" eventType="editingChanged" id="wmJ-Ry-Jep"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvK-m2-Jdc">
                                 <rect key="frame" x="20" y="302" width="374" height="46"/>
@@ -147,6 +156,9 @@
                     <tabBarItem key="tabBarItem" title="Profil" image="person" catalog="system" selectedImage="person" id="DRT-NJ-8AZ"/>
                     <connections>
                         <outlet property="UserBirthDate" destination="6AI-c1-VRk" id="vaM-2O-X9u"/>
+                        <outlet property="UserEmail" destination="hkR-tL-9Iw" id="MN7-o6-2UG"/>
+                        <outlet property="UserFName" destination="SN1-tX-gEm" id="crg-Fp-1XX"/>
+                        <outlet property="UserLName" destination="dTR-12-GQK" id="4gl-Yv-bxz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXG-LN-iaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
