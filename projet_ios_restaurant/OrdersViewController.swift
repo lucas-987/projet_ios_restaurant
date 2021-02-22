@@ -9,23 +9,15 @@ import UIKit
 
 class OrdersViewController: UITableViewController {
 
+    @IBOutlet weak var orderButton: UIButton!
     var dishes = [Dish]()
     
     override func viewDidLoad() {
-        loadDummyDishes()
+        self.dishes = OrdersManager.shared.getDummyDishes()
         super.viewDidLoad()
         tableView.rowHeight = 100
         tableView.reloadData()
         // Do any additional setup after loading the view.
-    }
-    
-    func loadDummyDishes() {
-        let dishes = [
-            Dish(id: 0, name: "Pizza au roquefort", description: "Le roquefort c'est bon.", price: 7.50, calories: 5000, proteins: "500", carbs: "500", imageUrl: "Pas de lien"),
-            Dish(id: 1, name: "Entrecôte au poivre", description: "Le poivre c'est bon.", price: 10.50, calories: 5000, proteins: "500", carbs: "500", imageUrl: "Pas de lien"),
-            Dish(id: 2, name: "Hamburger épicé", description: "Les épices c'est bon.", price: 6.50, calories: 5000, proteins: "500", carbs: "500", imageUrl: "Pas de lien"),
-         ]
-        self.dishes = dishes;
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,6 +37,42 @@ class OrdersViewController: UITableViewController {
         return cell
     }
 
+    @IBAction func orderButtonPressed(_ sender: Any) {
+        print("Envoi de la commande au serveur")
+        order()
+    }
+    
+    func order() {
+        var dishesId = [Any]()
+        for dish in dishes { dishesId.append([dish.id]) }
+        let json = ["ids": dishesId]
+        
+        let urlString = "http://193.70.115.114/resto/post/1"
+        guard let url = URL(string: urlString) else { return }
+        
+        var request = URLRequest(url: url)
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        print(jsonData as Any)
+        request.httpMethod = "POST"
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let _ = error {
+                return
+            }
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                return
+            }
+            guard let data = data else {
+                return
+            }
+            self.dishes = []
+            OrdersManager.shared.deleteOrderedDishes()
+            self.tableView.reloadData()
+        }
+        task.resume()
+        return
+    }
     /*
     // MARK: - Navigation
 
@@ -55,4 +83,15 @@ class OrdersViewController: UITableViewController {
     }
     */
 
+    /*
+     {
+        [ids : [1,2,3,4]],
+        ["id" : 2],
+        ["id" : 3],
+        ["id" : 4],
+        ["id" : 5],
+        ["id" : 6]
+     }
+     
+     */
 }

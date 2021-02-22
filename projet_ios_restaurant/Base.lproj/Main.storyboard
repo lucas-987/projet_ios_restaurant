@@ -167,7 +167,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXG-LN-iaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1815.9420289855075" y="-563.16964285714278"/>
-            <point key="canvasLocation" x="1838" y="-569"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jPO-W9-PPx">
@@ -223,7 +222,10 @@
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="5OK-7I-uWd">
                             <rect key="frame" x="0.0" y="195" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" title="Commander"/>
+                            <connections>
+                                <action selector="orderButtonPressed:" destination="QnZ-NO-ob0" eventType="touchUpInside" id="Oqh-OZ-nI8"/>
+                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="95" id="CIl-6I-6Ba" customClass="OrderTableViewCell" customModule="projet_ios_restaurant" customModuleProvider="target">
@@ -266,6 +268,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Commandes" image="bag" catalog="system" id="Hly-Ue-3Px"/>
+                    <connections>
+                        <outlet property="orderButton" destination="5OK-7I-uWd" id="EQL-nv-GMZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cp-oY-SRl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,12 +278,12 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <image name="bag" catalog="system" width="128" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
