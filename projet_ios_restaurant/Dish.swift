@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Dish {
+struct Dish : Decodable {
     var id: Int
     var name: String
     var description: String

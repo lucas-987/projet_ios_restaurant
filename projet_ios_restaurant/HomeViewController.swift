@@ -42,13 +42,30 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     }
     
     func getDishes() {
-        dishes = [
+        /*dishes = [
             Dish(id: 1, name: "dish 1", description: "dont know", price: 10.0, calories: 500, proteins: "prot", carbs: "carbs", imageUrl: "https://artgalleryofballarat.com.au/wp-content/uploads/2020/06/placeholder-image-768x576.png"),
             Dish(id: 2, name: "dish 2", description: "dont know", price: 5.0, calories: 500, proteins: "prot", carbs: "carbs", imageUrl: ""),
             Dish(id: 3, name: "dish 3", description: "dont know", price: 13.25, calories: 500, proteins: "prot", carbs: "carbs", imageUrl: ""),
             Dish(id: 4, name: "dish 4", description: "dont know", price: 9.80, calories: 500, proteins: "prot", carbs: "carbs", imageUrl: ""),
             Dish(id: 5, name: "dish 5", description: "dont know", price: 7.5, calories: 500, proteins: "prot", carbs: "carbs", imageUrl: ""),
-        ]
+        ]*/
+        
+        NetworkManager.shared.getDishes(completed: ) { result in
+            switch result {
+            case .success(let dishes):
+                //remplir ma table view avec le tableau followr que la fonction getusers(celle dans networkmANAGER) nous retourne
+                self.dishes = dishes
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
+            case .failure(let error):
+                let alert = GFAlert(title: "Oups", message: error.rawValue)
+                DispatchQueue.main.async {
+                    alert.showAlert(on: self)
+                }
+            }
+        }
     }
     /*
     // MARK: - Navigation

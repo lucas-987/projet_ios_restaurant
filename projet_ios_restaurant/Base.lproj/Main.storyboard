@@ -95,6 +95,9 @@
                                 <state key="normal" title="Save Changes">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonSaveClicked:" destination="f4l-lH-Fd6" eventType="touchUpInside" id="obh-TB-wpj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REQUESTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrz-Hm-4Iz">
                                 <rect key="frame" x="20" y="430" width="111" height="36"/>
@@ -142,6 +145,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profil" image="person" catalog="system" selectedImage="person" id="DRT-NJ-8AZ"/>
+                    <connections>
+                        <outlet property="UserBirthDate" destination="6AI-c1-VRk" id="vaM-2O-X9u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXG-LN-iaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

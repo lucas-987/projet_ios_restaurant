@@ -13,6 +13,7 @@ class profilVC: UIViewController {
     @IBOutlet weak var UserFName: UITextField!
     @IBOutlet weak var UserLName: UITextField!
     @IBOutlet weak var UserEmail: UITextField!
+    @IBOutlet weak var UserBirthDate: UIDatePicker!
     
     
     override func viewDidLoad() {
@@ -39,6 +40,20 @@ class profilVC: UIViewController {
             }
             
         }
+    }
+    
+    
+    @IBAction func buttonSaveClicked(_ sender: UIButton) {
+        
+        let lastName = UserLName.text
+        let firstName = UserFName.text
+        let email = UserEmail.text
+        
+        let dateFormatter = DateFormatter()
+        let birthDate = dateFormatter.string(from: UserBirthDate.date)
+        
+        // TODO utiliser ces données pour faire la requête en post
+        
     }
 }
 
